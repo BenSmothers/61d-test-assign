@@ -1,1 +1,5 @@
+
 conflict number two
+
+This is my new feature. -- No, this is
+
