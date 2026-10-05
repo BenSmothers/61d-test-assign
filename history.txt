@@ -1,0 +1,58 @@
+ 1001  echo Hello Bash!
+ 1002  echo 'Hello Bash!'
+ 1003  pwd
+ 1004  cd documents
+ 1005  mkdir assignment-test
+ 1006  cd assignment-test
+ 1007  mkdir bash-assignment
+ 1008  cd bash-assignment
+ 1009  touch README.md
+ 1010  touch meaning-of-life.txt
+ 1011  ls
+ 1012  mv meaning-of-life.txt history.txt
+ 1013  ls
+ 1014  code .
+ 1015  git init -b main
+ 1016  git status
+ 1017  git add .
+ 1018  git status
+ 1019  git commit -m "Initial commit"
+ 1020  git switch -c new-feature
+ 1021  git branch
+ 1022  touch feature.txt
+ 1023  echo "This is my new feature." > feature.txt
+ 1024  git add feature.txt
+ 1025  git commit -m "Add feature"
+ 1026  git switch main
+ 1027  la
+ 1028  ls
+ 1029  git merge new-feature
+ 1030  git branch -d new-feature
+ 1031  git remote add origin https://github.com/BenSmothers/61d-test-assign.git
+ 1032  git push -u origin main
+ 1033  git switch -c conflict1
+ 1034  git add .
+ 1035  git commit -m "conflict 1 changes"
+ 1036  git push -u origin conflict1
+ 1037  git switch main
+ 1038  git switch -c conflict2
+ 1039  git add .
+ 1040  git commit -m "conflict 2 changes"
+ 1041  git push -u origin conflict2
+ 1042  git switch main
+ 1043  git pull
+ 1044  git switch main
+ 1045  git pull origin main
+ 1046  touch .gitignore
+ 1047  git add .gitignore
+ 1048  git commit -m "add gitignore"
+ 1049  touch no-commit.txt
+ 1050  git status
+ 1051  git push
+ 1052  history | tail -n 200 >> history.txt
+ 1053  history | tail -n 500 >> history.txt
+ 1054  grep "Hello Bash" history.txt
+ 1055  history | tail -n 500 > history.txt
+ 1056  grep "Hello Bash" history.txt
+ 1057  history 1 > history.txt
+ 1058  grep "Hello Bash" history.txt
